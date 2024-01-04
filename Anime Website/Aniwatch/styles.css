@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+@font-face{
+    font-family: myFont1;
+    src:url("./Rubik_Scribble/RubikScribble-Regular.ttf");/*RS*/
+} 
+@font-face{
+    font-family: myFont2;
+    src:url("./Rubik_Doodle_Shadow/RubikDoodleShadow-Regular.ttf"); /*RD*/
+}
+body{
+    background-color: black;
+    color: red; 
+    align-items: center;
+    width: 100%;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%;
+    align-content: center;
+    background-color: #080808;
+    /* position: sticky; */
+    /* top: 0; */
+    /* transform:translateZ(-50%,-50%); */
+}
+header .hlogo{
+    /* color: red; */
+    /* border: 1px solid; */
+    margin-left: -3%;
+    height: 10vh;
+    width: 30%;
+    background-image: url("/images/image-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header nav{
+    margin-top: 7px;
+    align-self: center;
+}
+header nav>a{
+    margin: 0px 0 0 30px;
+    text-decoration: none;
+    color: aliceblue;
+}
+header nav>a:hover{
+    color: #FF5959;
+    text-decoration:underline;
+}
+.main{
+    height: 490vh;
+    width: 100%;
+    border: 1px;
+    position: relative;
+    justify-content: center;
+}
+.first{
+    height: 100vh;
+    border: 1px ;
+    /* width: 80%;
+    margin-left: 10%;
+    margin-top: 16vh; */
+}
+.first .first-frame{
+    position: relative;
+    /* display: flex; */
+    height: 80vh;
+    width: 80%;
+    margin: 10vh 10%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url("/images/bgimg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    /* background-size: 120% 100%; */
+    background-size: cover;
+    box-shadow: 1px 1px 30px white;
+}
+/* .first .first-frame>#para1{
+    position: absolute;
+    margin: 11% 0 0 7%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+.first .first-frame>#para2{
+    position: absolute;
+    margin: 24% 0 0 9%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.first .first-frame>#para3{
+    position: absolute;
+    margin: 26% 0 0 11%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.first-frame .img1{
+    position: relative;
+    height: 450px;
+    margin-left: 400px;
+    margin-top: 10px;
+    margin-left: 52%;
+} */
+.first-frame .img1{
+    float: right;
+    height: 450px;
+    position: relative;
+    margin: 1% -12% 0 0;
+}
+.first-frame>p{
+    position: absolute;
+    margin: 17% 9%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-weight: 700; */
+}
+
+.first-frame .search-bar{
+    position: absolute;
+    border: 1px solid #D36B00;
+    background-color: white;
+    width: 40%;
+    height: 45px;
+    border-radius: 50px;
+    margin: 32% 0 0 14%;
+}
+.search-bar::placeholder{
+    font-size: 15px;
+    padding-left: 5%;
+}
+.first-frame .search-bar>p{
+    color: gray;
+    padding: 12px;
+}
+.first-frame .Q{
+    position: absolute;
+    border: 1px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    margin: 32% 0 0 56%;
+}
+.first-frame .Q button{
+    border-radius: 50%;
+    margin: -2px;
+    background: blanchedalmond;
+}
+.first-frame .Q i{
+    margin: 12px 12px;
+    color: aqua;
+    font-size: 20px;
+}
+.first-frame .Q button:hover{
+    opacity: 0.5;
+}
+.second{
+    height: 100vh;
+    /* border: 1px solid; */
+}
+.second .second-frame{
+    display: flex;
+    position: relative;
+    border: 1px solid black;
+    height: 80vh;
+    width: 80%;
+    border-radius: 10px;
+    margin: 10vh 10%;
+    box-shadow: 1px 1px 30px white;
+}
+.second-frame .split-lft{
+    border: 1px solid black;
+    height: 100%;
+    width: 30%;
+    border-radius: 10px 0 0 10px;
+    background-color: #3F3F3F;
+}
+.second-frame .split-rgt{
+    border: 1px solid black;
+    height: 100%;
+    width: 70%;
+    border-radius: 0 10px 10px 0;
+    background-image: url("/images/download.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.second-frame .card-container{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+.second-frame .card1{
+    position: absolute;
+    border: 1px solid black;
+    height: 80%;
+    width: 25%;
+    margin: 5% 10%;
+    border-radius: 20px;
+    background-color:darkblue;
+    background-image: url("/images/Imagen\ oficial\ del\ arco\ de\ Zou\ de\ One\ Piece\ y\ diseños\ para\ el\ arco\ de\ Silver\ Mine_.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: -5px 12px 30px black;
+}
+.second-frame .card1>#i1{
+    /* position: absolute; */
+    padding: 120% 75%;
+    font-size: 40px;
+    font-weight: 600;
+}
+.card-container>#name1{
+    position: absolute;
+    margin: 30% 3%;
+    font-size: large;
+    /* font-weight: 00; */
+    color: white;
+    transform: rotate(-90deg);
+}
+.card-container>#sp1{
+    position: absolute;
+    margin: 36% 6%;
+    font-size: larger;
+    font-weight: 800;
+    color: #E8CA0A;
+    /* transform: rotate(-90deg); */
+}
+.card-container>#name2{
+    position: absolute;
+    margin: 25% 35%;
+    transform: rotate(-90deg);
+    font-size: large;
+    /* font-weight: 00; */
+    color: white;
+}
+.card-container>#sp2{
+    position: absolute;
+    margin: 32% 39%;
+    font-size: larger;
+    font-weight: 800;
+    color: #E8CA0A;
+    /* transform: rotate(-90deg); */
+}
+.card-container>#name3{
+    position: absolute;
+    margin: 25% 62%;
+    transform: rotate(-90deg);
+    font-size: large;
+    color: white;
+
+}
+.card-container>#sp3{
+    position: absolute;
+    margin: 32% 66%;
+    font-size: larger;
+    font-weight: 800;
+    color: #E8CA0A;
+    /* transform: rotate(-90deg); */
+}
+.second-frame .card2{
+    position: absolute;
+    border: 1px solid black;
+    height: 60%;
+    width: 20%;
+    margin: 10% 43.5%;
+    border-radius: 20px;
+    background-color: darksalmon;
+    background-image: url("/images/Jujutsu\ Kaisen\ \(Anime\).jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: -5px 15px 10px black;
+}
+.second-frame .card2>#i2{
+    position: absolute;
+    padding: 115% 80%;
+    font-size: 25px;
+    font-weight: 600;
+}
+.second-frame .card3{
+    position: absolute;
+    border: 1px solid black;
+    height: 60%;
+    width: 20%;
+    margin: 10% 70%;
+    border-radius: 20px;
+    background-color: crimson;
+    background-image: url("/images/Shingeki\ no\ Kyojin\,\ Season\ 4\ Part\ 3\,\ official\ poster\ release.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: -5px 15px 10px black;
+}
+.second-frame .card3>#i3{
+    padding: 115% 80%;
+    font-size: 25px;
+    font-weight: 600;
+}
+.third{
+    height: 160vh;
+    /* border: 1px solid red; */
+}
+.third .third-frame{
+    position: absolute;
+    /* border: 1px solid deepskyblue; */
+    height: 180vh;
+    width: 80%;
+    border-radius: 10px;
+    margin: 10vh 10%;
+    /* box-shadow: 1px 1px 10px white; */
+}
+.third-frame .upper-container{
+    display: flex;
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 100vh;
+    width: 100%;
+    box-shadow: 1px 1px 30px white;
+}
+.upper-container .split1{
+    /* border: 1px solid pink; */
+    height: 100%;
+    width: 70%;
+    border-radius: 10px 0 0 10px;
+    background-image: url("/images/flower2.jpeg");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: -30%;
+}
+.upper-container .split2{
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid; */
+    border-radius: 0 10px 10px 0; 
+    background-color: #3F3F3F;
+}
+.split1 img{
+    position: absolute;
+    height: 160%;
+    margin: -10% 0 0 -10%;
+    justify-content: left;
+}
+.third-frame .blur{
+    position:absolute;
+    height: 30%;
+    width: 48%;
+    margin: 15% 60%;
+    border-radius: 50px;
+    background: linear-gradient(135deg , rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: -1px 3px 10px white;
+}
+.blur>i{
+    position: absolute;
+    margin: 10% 85%;
+    font-size: 30px;
+}
+.blur .p1{
+    display: inline;
+    position: absolute;
+    font-size: 20px;
+    margin: 10% 10%;
+    color: white;
+}
+.blur .stars{
+    display: inline;
+    position: absolute;
+    margin: 18% 10%;
+    color: #E8CA0A;
+}
+.blur #p2{
+    text-align: justify;
+    font-size: 80%;
+    margin: 25% 10%;
+    color: #A5A8A8;
+}
+.third-frame .rating{
+    height: 20vh;
+    width: 20vh;
+    position: absolute;
+    margin: 50% 0% 0 65%;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: -1px 1px 40px black;
+}
+.rating>p{
+    color: #E8CA0A;
+    position: relative;
+    font-size: xx-large;
+    font-weight: 800;
+    margin: 28% 26%;
+}
+.fourth{
+    height: 110vh;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.fourth-frame{
+    position: relative;
+    border: 1px solid black;
+    height: 100%;
+    width: 80%;   
+    margin: 0 10%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px white;
+    background-image: url('/images/flower1.jpeg');
+    background-repeat: no-repeat;
+    background-position: -10% ;
+}
+.faq{
+    text-align: center;
+    font-size: 19px;
+    padding: 30px;
+    /* margin-top: 20px; */
+    color: white;
+}
+.faq>h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+.questions{
+    margin: 20px auto;
+    width: 100%;
+}
+.questions li{
+    list-style: none;
+    width: 60%;
+    padding: 5px;
+    margin: 0 20%;
+}
+.questions li label:hover{
+    background-color:#2C2C2C;
+}
+.questions li label{
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* border: 1px solid yellow; */
+    padding: 18px;
+    background-color: #171616;
+    font-size: 20px;
+    color: white;
+}
+label::after{
+    content: '+';
+    font-size: 30px;
+    position: absolute;
+    right: 4%;
+    transition: transform 0.5s;
+}
+input[type='radio']{
+    display: none;
+}
+.questions .content{
+    background-color: #171616;
+    text-align: left;
+    max-height: 0;
+    /* font-weight: 100; */
+    color: white;
+    overflow: hidden;
+    /* display: none; */
+    transition: max-height 0.3s, padding 0.3s;
+}
+.questions input[type='radio']:hover + label + .content{
+    max-height: 30%;
+    padding: 20px 10px;
+}
+.questions input[type='radio']:checked + label::after{
+    transform: rotate(135deg);
+}
+footer{
+    display: flex;
+    padding: 20px 10%;
+    background-color: #080808;
+    color: white;
+}
+footer .flogo{
+    height:10vh;
+    width: 30%;
+    position: relative;
+    /* border: 1px solid; */
+    background-image: url("/images/image-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -2%;
+}
+footer .foot-container{
+    margin: 1% 0 0 35%;
+    /* border: 1px solid; */
+    display: flex;
+    gap: 25%;
+    justify-content: space-between;
+}
+footer .foot-container>a,i{
+    /* margin: 0 0 0 20px; */
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+footer .foot-container>a,i:hover{
+    opacity: 0.8;
+}
