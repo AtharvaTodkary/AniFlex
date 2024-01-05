@@ -473,7 +473,7 @@ input[type='radio']{
     /* display: none; */
     transition: max-height 0.3s, padding 0.3s;
 }
-.questions input[type='radio']:hover + label + .content{
+.questions input[type='radio']:checked + label + .content{
     max-height: 30%;
     padding: 20px 10px;
 }
