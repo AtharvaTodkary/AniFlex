@@ -13,14 +13,14 @@
         <!-- <h1>Aniflex</h1> -->
         <div class="hlogo"><!--<img src="./images/image-removebg-preview.png" alt="">--></div> 
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Anime</a>
-            <a href="#">Manga</a>
-            <a href="#">Community</a>
+            <a href="#page1">Home</a>
+            <a href="#page2">Anime</a>
+            <a href="#page3">Manga</a>
+            <a href="#page4">Community</a>
         </nav>
     </header>
     <div class="main">
-        <div class="first">
+        <div class="first" id="page1">
             <div class="first-frame">
                 <!-- <p>1</p> -->
                 <!-- <p id="para1">Unlimited Animes, Mangas and more</p>
@@ -32,8 +32,8 @@
                 <div class="Q"><button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button></div>
             </div>
         </div>
-        <div class="second">
-            <div class="second-frame">
+        <div class="second"  id="page2">
+            <div class="second-frame"> 
                 <!-- <p>2</p> -->
                 <div class="split-lft"></div>
                 <div class="split-rgt"></div>
@@ -44,19 +44,22 @@
                     <span id="sp2">02</span>
                     <p id="name3">AttackOnTitan</p>
                     <span id="sp3">03</span>
-                    <div class="card1">
-                        <i id="i1" class="fa-regular fa-bookmark"></i>
+                    <div class="card1" id="k1">
+                        <i class="fa-regular fa-bookmark"></i>
                     </div>
-                    <div class="card2">
-                        <i id="i2" class="fa-regular fa-bookmark"></i>
+                    <div class="card2" id="k2">
+                        <i class="fa-regular fa-bookmark"></i>
                     </div>
-                    <div class="card3">
-                        <i id="i3" class="fa-regular fa-bookmark"></i>
+                    <div class="card3" id="k3">
+                        <i class="fa-regular fa-bookmark"></i>
                     </div>
                 </div>
             </div>
+            <div class="intro" style="display: none;">
+                <iframe width="100%" height="460" src="#" allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="third">
+        <div class="third" id="page3">
             <div class="third-frame">
                 <div class="upper-container">
                     <div class="split1"><img src="/images/Ichigo-removebg-preview.png" alt=""></div>
@@ -82,7 +85,7 @@
                 </div>
             </div>
         </div>
-        <div class="fourth">
+        <div class="fourth"  id="page4">
             <div class="fourth-frame">
                 <div class="faq">
                     <h2>Frequently Asked Questions</h2>
@@ -133,7 +136,7 @@
             </div>
         </div>
     </div>
-
+    
     <footer>
         <div class="flogo"></div>
         <div class="foot-container">
@@ -144,5 +147,7 @@
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
